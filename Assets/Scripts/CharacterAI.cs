@@ -109,7 +109,7 @@ public class CharacterAI : MonoBehaviour
             pos.y += 0.22f;
             pos.z = 0;
             pos.x = 0;
-
+                // this number is calculated?
             target.transform.localRotation = new Quaternion(0, 0.7071068f, 0, 0.7071068f);
 
             target.transform.DOLocalMove(pos, 0.2f);
