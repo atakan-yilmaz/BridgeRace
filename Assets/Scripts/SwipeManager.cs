@@ -52,6 +52,7 @@ public class SwipeManager : MonoBehaviour
         }
 
         //Did we cross the distance?
+//or why did u do that?
         if (swipeDelta.magnitude > 100)
         {
             //Which direction?
