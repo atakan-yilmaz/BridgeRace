@@ -78,6 +78,7 @@ public class CharacterAI : MonoBehaviour
                 if (hitColliders[i].tag.StartsWith(transform.GetChild(0).GetChild(0).GetChild(1).GetComponent<SkinnedMeshRenderer>().material.name.Substring(0, 1)))
                 {
                     ourColors.Add(hitColliders[i].transform.position);
+                    // Color.Add(hitCollider[i].transform.position);
                 }
             }
 
@@ -95,6 +96,7 @@ public class CharacterAI : MonoBehaviour
         if (!animator.GetBool("running"))
         {
             animator.SetBool("running", true);
+                // animator.SetBool("idle", true);
         }
         haveTarget = true;
     }
