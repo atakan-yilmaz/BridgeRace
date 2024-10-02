@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -62,6 +63,7 @@ public class CharacterAI : MonoBehaviour
                 if (!item.GetComponent<MeshRenderer>().enabled || item.GetComponent<MeshRenderer>().enabled && item.gameObject.tag != "Diz" + transform.GetChild(0).GetChild(0).GetChild(1).GetComponent<SkinnedMeshRenderer>().material.name.Substring(0, 1))
                 {
                     ropesNonActiveChild.Add(item);
+                     //return;
                 }
             }
 
@@ -97,6 +99,7 @@ public class CharacterAI : MonoBehaviour
         {
             animator.SetBool("running", true);
                 // animator.SetBool("idle", true);
+                //animator.setTrigger("idle", false);
         }
         haveTarget = true;
     }
